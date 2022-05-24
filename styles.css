@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600&family=Outfit:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -25,7 +25,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  gap: 2em;
+  gap: 5rem;
   background-color: var(--dark-cyan);
   background: url("images/bg-pattern-top.svg"),
     url("images/bg-pattern-bottom.svg"), var(--dark-cyan);
@@ -38,7 +38,7 @@ body {
   height: 37.4rem;
   background: #ffffff;
   border-radius: 1.5rem;
-  box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+  box-shadow: 0rem 5rem 10rem -2rem var(--very-dark-desaturated-blue);
   text-align: center;
 }
 
@@ -69,7 +69,9 @@ body {
 }
 
 .name {
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  color: var(--very-dark-desaturated-blue);
 }
 
 .age {
@@ -86,13 +88,13 @@ body {
 .city {
   font-size: 1.4rem;
   margin-top: 1rem;
-  line-height: 17px;
+  line-height: 1.7rem;
 }
 
 .footer {
   display: flex;
   justify-content: space-evenly;
-  border-top: 1px solid #e8e9ec;
+  border-top: 0.1rem solid #e8e9ec;
   padding: 0 2.5rem;
 }
 
@@ -107,20 +109,19 @@ body {
 
 .count {
   margin-bottom: 0.4rem;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05rem;
+  color: var(--very-dark-desaturated-blue);
 }
 
 .summary {
   font-size: 1rem;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.15rem;
+  color: var(--dark-grayish-blue);
 }
 
-.attribution {
+.attribution,
+a {
   font-size: 1.1rem;
   text-align: center;
-  color: hsl(0, 1%, 81%);
-}
-
-.attribution a {
   color: hsl(0, 1%, 81%);
 }
