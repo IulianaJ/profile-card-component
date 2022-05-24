@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600&family=Outfit:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 2em;
+  background-color: var(--dark-cyan);
+  background: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg"), var(--dark-cyan);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -55vh right 51.4vw, top 46vh left 50vw;
+}
+
+.card {
+  width: 35rem;
+  height: 37.4rem;
+  background: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+  text-align: center;
+}
+
+.header {
+  width: 35rem;
+  height: 14.9rem;
+  background-image: url("./images/bg-pattern-card.svg");
+  background-size: cover;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.profile-picture {
+  width: 10rem;
+  height: 10rem;
+  margin: -5rem auto 1rem;
+}
+
+.picture {
+  width: 100%;
+  border-radius: 50%;
+  border: 0.5rem solid #fff;
+  height: auto;
+  display: block;
+}
+
+.body {
+  padding: 0 2rem 2.2rem;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.age {
+  margin-left: 1rem;
+}
+
+.age,
+.city,
+.summary {
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+}
+
+.city {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  line-height: 17px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid #e8e9ec;
+  padding: 0 2.5rem;
+}
+
+.stats {
+  flex: 1;
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.count {
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.5px;
+}
+
+.summary {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  color: hsl(0, 1%, 81%);
+}
+
+.attribution a {
+  color: hsl(0, 1%, 81%);
+}
